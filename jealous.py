@@ -14,7 +14,7 @@ def run(host, user, password, kerberos, cmd, mode, endpoint):
         else:
             args = shlex.split(cmd)
             ps.add_cmdlet(args[0])
-            for a in args[1:]:192.168.20.15
+            for a in args[1:]:
                 ps.add_parameter(None, a)
         for item in ps.invoke():
             print(item)
